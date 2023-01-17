@@ -6,7 +6,7 @@ const mongooseuri =
 //This is a funtion that connects to the database.
 mongoose.set("strictQuery", false);
 var options = {
-   keepAlive: 1,
+   keepAlive: true,
    connectTimeoutMS: 30000,
    useNewUrlParser: true,
    useUnifiedTopology: true,
