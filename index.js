@@ -12,7 +12,9 @@ const port = 5000;
 app.use(express.json());
 
 //Using cors in the index js for using the REST in the browser
-app.use(cors());
+app.use(cors({
+    origin: '*'
+}));
 
 //Importing and using the module of route (Whenver the location in the first parameter will be visited the module imported in the second argument will be executed)
 app.use("/api/user", require("./routes/user"));
